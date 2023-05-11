@@ -140,6 +140,78 @@
 
           <article>
             <h1 id="k-means-for-image-compression-and-segmentation">K-Means for image compression and segmentation</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In this project, I implemented the K-Means algorithm for image compression and segmentation. The K-Means algorithm is a clustering algorithm that is used to group similar data points together. The algorithm works by randomly initializing K cluster centroids and then iteratively updating the centroids until the algorithm converges. The algorithm is guaranteed to converge, but it may converge to a local minimum. The algorithm is as follows:</p>
+
+<ol>
+  <li>Randomly initialize K cluster centroids</li>
+  <li>Repeat until convergence:
+    <ol>
+      <li>For each data point, assign it to the closest cluster centroid</li>
+      <li>For each cluster centroid, update the centroid to be the mean of all the data points assigned to it</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="image-compression">Image Compression</h2>
+
+<p>The K-Means algorithm can be used to compress an image by reducing the number of colors in the image. The algorithm works by treating each pixel in the image as a data point in a 3-dimensional space (one dimension for each color channel). The algorithm then clusters the pixels into K clusters and replaces each pixel with the centroid of the cluster it belongs to. The algorithm is as follows:</p>
+
+<ol>
+  <li>Treat each pixel in the image as a data point in a 3-dimensional space</li>
+  <li>Run the K-Means algorithm on the data points</li>
+  <li>For each pixel in the image, replace it with the centroid of the cluster it belongs to</li>
+</ol>
+
+<p>The algorithm is guaranteed to converge, but it may converge to a local minimum. To avoid this, the algorithm is run multiple times with different initializations and the best result is chosen.</p>
+
+<p>The algorithm is implemented in the <code class="language-plaintext highlighter-rouge">kmeans_compress</code> function in <code class="language-plaintext highlighter-rouge">kmeans.py</code>. The function takes in an image and the number of clusters to use and returns the compressed image. The function uses the <code class="language-plaintext highlighter-rouge">kmeans</code> function from <code class="language-plaintext highlighter-rouge">kmeans.py</code> to run the K-Means algorithm on the data points. The function then loops through each pixel in the image and replaces it with the centroid of the cluster it belongs to. The function returns the compressed image.</p>
+
+<p>The algorithm is run on the <code class="language-plaintext highlighter-rouge">peppers.png</code> image with 16 clusters. The original image is shown below:</p>
+
+<p><img src="assets/img/peppers.png" alt="peppers"></p>
+
+<p>The compressed image is shown below:</p>
+
+<p><img src="assets/img/peppers_compressed.png" alt="peppers_compressed"></p>
+
+<h2 id="image-segmentation">Image Segmentation</h2>
+
+<p>The K-Means algorithm can also be used to segment an image by grouping similar pixels together. The algorithm works by treating each pixel in the image as a data point in a 5-dimensional space (one dimension for each color channel and one dimension for the x and y coordinates). The algorithm then clusters the pixels into K clusters and replaces each pixel with the centroid of the cluster it belongs to. The algorithm is as follows:</p>
+
+<ol>
+  <li>Treat each pixel in the image as a data point in a 5-dimensional space</li>
+  <li>Run the K-Means algorithm on the data points</li>
+  <li>For each pixel in the image, replace it with the centroid of the cluster it belongs to</li>
+</ol>
+
+<p>The algorithm is guaranteed to converge, but it may converge to a local minimum. To avoid this, the algorithm is run multiple times with different initializations and the best result is chosen.</p>
+
+<p>The algorithm is implemented in the <code class="language-plaintext highlighter-rouge">kmeans_segment</code> function in <code class="language-plaintext highlighter-rouge">kmeans.py</code>. The function takes in an image and the number of clusters to use and returns the segmented image. The function uses the <code class="language-plaintext highlighter-rouge">kmeans</code> function from <code class="language-plaintext highlighter-rouge">kmeans.py</code> to run the K-Means algorithm on the data points. The function then loops through each pixel in the image and replaces it with the centroid of the cluster it belongs to. The function returns the segmented image.</p>
+
+<p>The algorithm is run on the <code class="language-plaintext highlighter-rouge">peppers.png</code> image with 16 clusters. The original image is shown below:</p>
+
+<p><img src="assets/img/peppers.png" alt="peppers"></p>
+
+<p>The segmented image is shown below:</p>
+
+<p><img src="assets/img/peppers_segmented.png" alt="peppers_segmented"></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In this project, I implemented the K-Means algorithm for image compression and segmentation. The K-Means algorithm is a clustering algorithm that is used to group similar data points together. The algorithm works by randomly initializing K cluster centroids and then iteratively updating the centroids until the algorithm converges. The algorithm is guaranteed to converge, but it may converge to a local minimum. The algorithm can be used to compress an image by reducing the number of colors in the image. The algorithm can also be used to segment an image by grouping similar pixels together. The algorithm is implemented in the <code class="language-plaintext highlighter-rouge">kmeans_compress</code> and <code class="language-plaintext highlighter-rouge">kmeans_segment</code> functions in <code class="language-plaintext highlighter-rouge">kmeans.py</code>. The functions take in an image and the number of clusters to use and return the compressed or segmented image. The functions use the <code class="language-plaintext highlighter-rouge">kmeans</code> function from <code class="language-plaintext highlighter-rouge">kmeans.py</code> to run the K-Means algorithm on the data points. The functions then loop through each pixel in the image and replace it with the centroid of the cluster it belongs to. The functions return the compressed or segmented image.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/K-means_clustering" rel="external nofollow noopener" target="_blank">K-Means Clustering</a></li>
+  <li><a href="https://www.geeksforgeeks.org/k-means-clustering-introduction/" rel="external nofollow noopener" target="_blank">K-Means Clustering Algorithm</a></li>
+</ul>
+
+<h2 id="source-code">Source Code</h2>
+
 <p>Every project has a beautiful feature showcase page.
 It’s easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.</p>
