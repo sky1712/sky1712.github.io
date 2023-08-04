@@ -4,10 +4,10 @@ title: about
 permalink: /
 subtitle: MS in Machine Learning @ <a href='https://www.ml.cmu.edu/'>CMU</a> \cdot BS in Mathematics @ <a href='http://www.math.iisc.ac.in/'>IISc</a>
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
