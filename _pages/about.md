@@ -17,9 +17,6 @@ news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
-
-# insert horizontal line between sections
-hr: true
 ---
 
 Hi! I'm Akash currently pursuing my M.S in Machine Learning in Carnegie Mellon University (CMU). Prior to this I completed my B.S in Mathematics from Indian Institute of Science (IISc). 
