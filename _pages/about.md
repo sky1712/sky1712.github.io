@@ -7,7 +7,7 @@ subtitle: MS in Machine Learning @ <a href='https://www.ml.cmu.edu/'>CMU</a> \cd
 profile:
   align: right
   image: Prof_pic.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
