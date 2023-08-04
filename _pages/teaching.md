@@ -7,6 +7,8 @@ nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Teaching
 
-Organize your courses by years, topics, or universities, however you like!
+### 2023
+
+* [10-425 / 10-625 Introduction to Convex Optimization](http://www.cs.cmu.edu/~mgormley/courses/10425/) (Fall 2023)
