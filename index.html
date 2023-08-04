@@ -124,7 +124,25 @@
         </header>
 
         <article>
-          
+          <div class="profile float-right">
+
+              <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/prof_pic-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/prof_pic-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/prof_pic-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+          </div>
 
           <div class="clearfix">
             <p>Hi! I’m Akash, currently pursuing my M.S in Machine Learning in Carnegie Mellon University (CMU). Prior to this I completed my B.S in Mathematics from Indian Institute of Science (IISc). I am primarily interested in theoritical guarantees of ML algorithms and their applications in real world problems. Presently I’m being advised by <a href="https://www.stat.cmu.edu/~siva/" rel="external nofollow noopener" target="_blank">Prof. Sivaraman Balakrishnan</a> and <a href="https://saurabhgarg1996.github.io/" rel="external nofollow noopener" target="_blank">Saurabh Garg</a> on developing provable algorithms for unsupervised domain adaptation.</p>
