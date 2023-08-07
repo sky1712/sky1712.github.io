@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MS in Machine Learning @ <a href='https://www.ml.cmu.edu/'>CMU</a> \cdot BS in Mathematics @ <a href='http://www.math.iisc.ac.in/'>IISc</a>
+subtitle: MS in Machine Learning @ <a href='https://www.ml.cmu.edu/'>CMU</a> || BS in Mathematics @ <a href='http://www.math.iisc.ac.in/'>IISc</a>
 
 profile:
   align: right
